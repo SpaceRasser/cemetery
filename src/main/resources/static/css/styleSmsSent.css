@@ -1,0 +1,18 @@
+.sms-sent {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sms-sent h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sms-sent p {
+    color: #666;
+}

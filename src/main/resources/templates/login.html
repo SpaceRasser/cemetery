@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Авторизация</title>
+
+    <link href="/css/styleLogin.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="login">
+    <div class="login-header">
+        <h1>Авторизация</h1>
+    </div>
+    <div class="login-form">
+        <h3>Имя пользователя:</h3>
+        <input type="text" placeholder="Имя пользователя"/><br>
+        <h3>Пароль:</h3>
+        <input type="password" placeholder="Пароль"/>
+        <br>
+        <input type="button" value="Войти" class="login-button"/>
+        <br>
+        <a class="sign-up" th:href="@{/register}">Зарегестрироваться</a>
+        <br>
+        <h6 class="no-access"><a th:href="@{/reset-password.html}">Не можете войти в аккаунт?</a></h6>
+    </div>
+</div>
+<div class="error-page">
+    <div class="try-again">Ошибка: Повторите запрос позже</div>
+</div>
+
+<script src="/scripts/scriptLogin.js"></script>
+</body>
+</html>
